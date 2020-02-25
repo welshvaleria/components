@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PizzaService } from '../pizza.service';
 
 @Component({
   selector: 'app-pizza-toppings',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PizzaToppingsComponent implements OnInit {
 
-  constructor() { }
+  // Magic Dependency Injection... using great TypeScript syntax!
+  constructor(private pizzaSvc: PizzaService) { }
 
   ngOnInit(): void {
   }
