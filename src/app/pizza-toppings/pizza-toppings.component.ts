@@ -13,7 +13,11 @@ export class PizzaToppingsComponent implements OnInit {
 
   constructor(private pizzaSvc: PizzaService) { }
 
+  pizzaToppings = [];
+
   ngOnInit(): void {
+    this.pizzaToppings = this.pizzaSvc.loadPizzaToppings();
+    console.log(this.pizzaToppings);
   }
 
 }
