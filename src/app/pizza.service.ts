@@ -5,5 +5,17 @@ import { Injectable } from '@angular/core';
 })
 export class PizzaService {
 
-  constructor() { }
+    constructor() { }
+
+    loadPizzaToppings( ) {
+
+        // pretend we loaded these from the internet
+        const pizzaToppings = [
+            { name: "Pepperoni", price: 1.50}
+            , { name: "Sausage", price: 1.75}
+            , { name: "Pepperoni", price: .50}
+        ];
+
+        return pizzaToppings.map(x => ({...x, checked: false}))
+    }
 }
