@@ -11,7 +11,11 @@ export class PizzaToppingsComponent implements OnInit {
   // Magic DI (Dependency injection)
   constructor(private pizzaSvc: PizzaService) { }
 
+  pizzaToppings = [];
+
   ngOnInit(): void {
+    this.pizzaToppings = this.pizzaSvc.loadPizzaToppings();
+    console.log(this.pizzaToppings);
   }
 
 }
