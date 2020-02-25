@@ -7,7 +7,7 @@ export class PizzaService {
 
     constructor() { }
 
-    loadPizzaToppings( ) {
+    loadPizzaToppings() {
 
         // pretend we loaded these from the internet
         const pizzaToppings = [
@@ -16,6 +16,6 @@ export class PizzaService {
             , { name: "Pepperoni", price: .50}
         ];
 
-        return pizzaToppings.map(x => ({...x, checked: false}))
+        return pizzaToppings.map(x => ({...x, checked: false}));
     }
 }
