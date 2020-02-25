@@ -12,6 +12,7 @@ export class PizzaService {
     // Pretend we loaded these from the internet...
     const pizzaToppings = [
       {name: "Pepperoni", price: 1.50 }
+      , {name: "Sausage", price: 1.75 }
       , {name: "Extra Cheese", price: 0.50 }
     ];
     
