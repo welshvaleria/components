@@ -6,13 +6,13 @@
         <div
             *ngFor="let pt of pizzaToppings"
         >
-            <lable>
+            <label>
                 <mat-checkbox
                     [(ngModel)]="pt.checked"
                 >                    
                 </mat-checkbox>
                 {{ pt.name }} ({{ pt.price | currency}})
-            </lable>
+            </label>
         </div>
         <br>
         <br>
@@ -20,7 +20,6 @@
             *ngIf='false'
             mat-flat-button
             color='primary'
-            (click)="checkout()"
         >
             Checkout
         </button>
