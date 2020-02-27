@@ -28,12 +28,12 @@ export class PizzaToppingsComponent implements OnInit {
     console.log(this.pizzaToppings);
   }
 
-  checkout() {
-    this.total = this.pizzaToppings
-      .filter(x => x.checked)
-      .reduce(
-        (acc, x) => acc + x.price 
-        , 0
-      )
-  }
+  // checkout() {
+  //   this.total = this.pizzaToppings
+  //     .filter(x => x.checked)
+  //     .reduce(
+  //       (acc, x) => acc + x.price 
+  //       , 0
+  //     )
+  // }
 }
