@@ -11,7 +11,21 @@ export class PizzaToppingsComponent implements OnInit {
   // Magic DI (dependency injection)...TS has awesome shorthand syntax for this
   constructor(private pizzaSvc: PizzaService) { }
 
+  pizzaToppings = [];
+  total = 0;
+
   ngOnInit(): void {
+    this.pizzaToppings = this.pizzaSvc.loadPizzaToppings();
+    console.log(this.pizzaToppings);
+  };
+
+  checkout() {
+    this.total = this.pizzaToppings
+      .filter(x => x.checked)
+      .reduce(
+        (acc, x) => acc + x.price 
+        , 0
+      )
   }
 
 }
