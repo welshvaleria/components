@@ -21,7 +21,7 @@ export class TtmAdditionComponent implements OnInit {
 	  const vowels = ["a", "e", "i", "o", "u"];
 	  let vIndex = 0;
 	  if (vowels.includes(this.suggestion[0])) {
-		console.log(this.suggestion + "way");
+		this.pigLatin = this.suggestion + "way";
 	  } else {
 		  for (let char of this.suggestion) {
 			if (vowels.includes(char)) {
