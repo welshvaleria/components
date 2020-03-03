@@ -7,29 +7,36 @@
 
     <mat-card-content>
 
-        <button
+        <button 
+            mat-mini-fab
+            color="accent"
             (click)="checkAll()"
         >
             All
         </button>
+        
         &nbsp;
+        
         <button
+            mat-mini-fab
+            color="secondary"
             (click)="uncheckAll()"
         >
             None
         </button>
+        
         <br /><br />
 
         <div
             *ngFor="let pt of pizzaToppings"
         >
-            <label>
-                <input 
-                    type="checkbox"
-                    [(ngModel)]="pt.checked"
-                />
-                {{ pt.name }} ({{ pt.price | currency}})
-            </label>
+
+        <mat-checkbox
+            [(ngModel)]="pt.checked"
+        >
+            {{ pt.name }} ({{ pt.price | currency }})
+        </mat-checkbox>
+
         </div>
 
         <h4>
