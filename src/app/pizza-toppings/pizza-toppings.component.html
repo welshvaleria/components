@@ -1,4 +1,16 @@
 <h3>Available Pizza Toppings</h3>
+<button
+    (click)="checkAll()"
+>
+    All
+</button>
+&nbsp;
+<button
+    (click)="uncheckAll()"
+>
+    None
+</button>
+<br/><br/>
 <div
     *ngFor="let pt of pizzaToppings"
 >
