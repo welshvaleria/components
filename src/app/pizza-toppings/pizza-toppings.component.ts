@@ -13,18 +13,17 @@ export class PizzaToppingsComponent implements OnInit {
   constructor(private pizzaSvc: PizzaService) { }
 
   pizzaToppings = [];
-  total = 0;
 
   ngOnInit(): void {
     this.pizzaToppings = this.pizzaSvc.loadPizzaToppings();
     console.log(this.pizzaToppings);
   }
 
-  checkout() {
-    this.total = this.pizzaToppings
+  get total(): number {                   // this is a property not a function ..ANgular knows we are binding to a property on total
+    return this.pizzaToppings
       .filter(x => x.checked)
       .reduce(
-        (acc, x) => acc + x.price 
+        (acc, x) => acc + x.price //sum up the prices
         , 0
       )
   }
