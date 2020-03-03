@@ -8,12 +8,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { MatCardModule } from '@angular/material/card'
 import { MatButtonModule } from '@angular/material/button'
-import { MatCheckboxModule } from '@angular/material/checkbox'
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { SdmMadlibComponent } from './sdm-madlib/sdm-madlib.component'
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    SdmMadlibComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +25,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox'
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
