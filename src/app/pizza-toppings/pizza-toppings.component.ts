@@ -26,6 +26,16 @@ export class PizzaToppingsComponent implements OnInit {
       .reduce(
         (acc, x) => acc + x.price 
         , 0
-      )
+      );
   }
+
+  checkAll() {
+    this.pizzaToppings = this.pizzaToppings.map(x => ({...x, checked: true}));
+  }
+
+  uncheckAll() {
+    this.pizzaToppings = this.pizzaToppings.map(x => ({...x, checked: false}));
+  }
+
+
 }
