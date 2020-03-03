@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-title>
+        Pig Latin!
+    </mat-card-title>
+    <mat-form-field class="full-width">
+        <mat-label>Ayyyy</mat-label>
+        <input [(ngModel)]="suggestion" matInput placeholder="One word only lol">
+    </mat-form-field>
+    &nbsp;
+    <button 
+        mat-fab
+        color="accent"
+        (click)="createPigLatin()">
+        Submit
+    </button>
+    <br/>
+    <h4>
+        {{ pigLatin }}
+    </h4>
+</mat-card>
+  
