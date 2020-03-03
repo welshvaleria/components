@@ -22,12 +22,11 @@
     <div
     *ngFor="let pt of pizzaToppings" 
 >
-        </div>
 
   <mat-checkbox
-            [(ngModel)]="pt.checked"
-        {{ pt.name }} ({{ pt.price | currency}}) <!--take whatever price number and use angular pipe called currency-->
+            [(ngModel)]="pt.checked"    
   >
+  {{ pt.name }} ({{ pt.price | currency}})
     </mat-checkbox>
 </div>
 
