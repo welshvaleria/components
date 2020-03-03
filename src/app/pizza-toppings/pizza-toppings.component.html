@@ -1,9 +1,13 @@
 <mat-card>
     <mat-card-title>Available Pizza Toppings</mat-card-title>
     <mat-card-content>
-        <button (click)="checkAll()">All</button>
+        <button mat-mini-fab 
+                color="warn"
+                (click)="checkAll()">All</button>
         &nbsp;
-        <button (click)="uncheckAll()">None</button>
+        <button mat-mini-fab
+                color="accent" 
+                (click)="uncheckAll()">None</button>
         <br/><br/>
         <div
             *ngFor="let pt of pizzaToppings">
