@@ -1,4 +1,12 @@
 <h3>Available Pizza Toppings</h3>
+<button
+    (click)="checkAll()">All</button
+    >
+&nbsp;
+<button
+    (click)="uncheckAll()">None</button>
+<br>
+<br>
 <div
     *ngFor="let pt of pizzaToppings"
 >
@@ -11,13 +19,7 @@
     {{ pt.name }} ({{ pt.price | currency}})
     </label>
 </div>
-<br>
-<br>
-<button
-    (click)="checkout()"
->
-    Checkout
-</button>
+
 <h4>
-    {{ total | currency }}
+    Total: {{ total | currency }}
 </h4>
