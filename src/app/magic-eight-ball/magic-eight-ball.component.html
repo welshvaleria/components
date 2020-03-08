@@ -1,0 +1,15 @@
+<br><br>
+<mat-card>
+    <mat-card-title>Magic 8 Ball</mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>Enter you question</mat-label>
+            <input matInput placeholder="Will it snow in April?" [(ngModel)]="question"/>
+        </mat-form-field> 
+        <button mat-fab (click)='outputFortune()'>Answer</button>    
+        <br>
+        {{ answer }}
+    </mat-card-content>
+</mat-card>
+
+
