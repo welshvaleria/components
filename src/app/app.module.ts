@@ -11,13 +11,13 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component'
+import { AlecDiceRollComponent } from './alec-dice-roll/alec-dice-roll.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    TjsAdditionComponent
+    AlecDiceRollComponent
   ],
   imports: [
     BrowserModule,
