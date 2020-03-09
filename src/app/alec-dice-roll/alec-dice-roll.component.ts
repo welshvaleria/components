@@ -12,4 +12,8 @@ export class AlecDiceRollComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  rollDie() {
+    
+  }
+
 }
