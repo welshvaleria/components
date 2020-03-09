@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
+import { WeeksixComponent } from './weeksix/weeksix.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
@@ -13,7 +14,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox'
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    WeeksixComponent
   ],
   imports: [
     BrowserModule,
