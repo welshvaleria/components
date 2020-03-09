@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { WeeksixService } from '../weeksix.service';
 
 @Component({
   selector: 'app-weeksix',
@@ -8,7 +7,7 @@ import { WeeksixService } from '../weeksix.service';
 })
 export class WeeksixComponent implements OnInit {
 
-  constructor(private weeksixSvc: WeeksixService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
@@ -23,7 +22,13 @@ export class WeeksixComponent implements OnInit {
 
   // Refresh a new random number
   newNumber() {
-      this.randomNumber = this.weeksixSvc.generateRandomNumber();
+      this.randomNumber = this.generateRandomNumber();
+  }
+
+  // Generate and return a random number between 1 and 100
+  generateRandomNumber() {
+    this.randomNumber = Math.floor(Math.random() * 100);
+    return this.randomNumber;
   }
 
 }
