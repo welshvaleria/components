@@ -12,7 +12,11 @@ export class AlecDiceRollComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  rollDie() {
+  rollDie(): Number {
+    return (Math.ceil(Math.random() * 20));
+  }
+
+  doesHit(roll: Number) {
     
   }
 
