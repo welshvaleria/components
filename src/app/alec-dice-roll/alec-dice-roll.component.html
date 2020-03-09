@@ -7,9 +7,14 @@
         <button
             mat-fab
             color="primary"
-            (click)="rollDie()"
+            (click)="doesHit(rollDie())"
         >
             Roll!
         </button>
+        <br>
+        <br>
+        <h2>
+            {{ answer }}
+        </h2>
     </mat-card-content>
 </mat-card>
