@@ -1,1 +1,13 @@
-<p>jacobs-component works!</p>
+<mat-card>
+    <mat-card-title>Pick who wins $10!! (Or whatever we want)</mat-card-title>
+    <mat-card-content>
+        <button
+            mat-raised-button
+            color="accent"
+            (click)="pickRandomWinner()"
+        >
+            Pick a winner
+        </button>
+    </mat-card-content>
+    <mat-card-title id="winner"></mat-card-title>
+</mat-card>
