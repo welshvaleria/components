@@ -9,15 +9,17 @@ export class AlecDiceRollComponent implements OnInit {
 
   constructor() { }
 
+  hit = 0;
+
   ngOnInit(): void {
   }
 
-  rollDie(): Number {
+  rollDie(): number {
     return (Math.ceil(Math.random() * 20));
   }
 
-  doesHit(roll: Number) {
-    
+  doesHit(roll: number) {
+    this.hit = roll;
   }
 
 }
