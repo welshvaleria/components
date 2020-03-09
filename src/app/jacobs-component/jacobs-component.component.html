@@ -1,5 +1,5 @@
 <mat-card>
-    <mat-card-title>Pick who wins $10!! (Or whatever we want)</mat-card-title>
+    <mat-card-title>Pick who wins $1,000,000!! (Or whatever we want)</mat-card-title>
     <mat-card-content>
         <button
             mat-raised-button
@@ -7,6 +7,13 @@
             (click)="pickRandomWinner()"
         >
             Pick a winner
+        </button>
+        <button
+            mat-raised-button
+            color="primary"
+            (click)="clear()"
+        >
+            Clear
         </button>
     </mat-card-content>
     <mat-card-title id="winner"></mat-card-title>
