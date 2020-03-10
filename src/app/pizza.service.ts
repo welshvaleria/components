@@ -18,4 +18,15 @@ export class PizzaService {
 
     return pizzaToppings.map(x => ({...x, checked: false}));
   }
+
+  loadPizzaSides() {
+
+        const pizzaSides = [
+          { name: "Garlic Knots", price: 8.00}
+          , { name: "Bread Sticks", price: 5.00}
+          , { name: "Fries", price: 2.50}
+        ];
+    
+        return pizzaSides.map(x => ({...x, checked: false}));
+  }
 }
