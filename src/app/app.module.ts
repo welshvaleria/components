@@ -22,8 +22,7 @@ import { AlecDiceRollComponent } from './alec-dice-roll/alec-dice-roll.component
     PizzaToppingsComponent,
     AlecDiceRollComponent,
     MagicEightBallComponent,
-    JacobsComponentComponent,
-    TjsAdditionComponent,
+    JacobsComponentComponent
   ],
   imports: [
     BrowserModule,
