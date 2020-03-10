@@ -12,12 +12,16 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { SdmMadlibComponent } from './sdm-madlib/sdm-madlib.component'
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { JacobsComponentComponent } from './jacobs-component/jacobs-component.component';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    SdmMadlibComponent
+    SdmMadlibComponent,
+    JacobsComponentComponent,
+    TjsAdditionComponent
   ],
   imports: [
     BrowserModule,
