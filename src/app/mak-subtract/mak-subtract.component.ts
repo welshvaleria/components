@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MakSubtractComponent implements OnInit {
 
+  numberOne = 5;
+  answer = 0;
+
+  squareNumber = () => {
+    this.answer = this.numberOne * this.numberOne;
+  }
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
