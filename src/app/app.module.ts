@@ -10,12 +10,16 @@ import { MatCardModule } from '@angular/material/card'
 import { MatButtonModule } from '@angular/material/button'
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { JacobsComponentComponent } from './jacobs-component/jacobs-component.component'
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    JacobsComponentComponent
+    JacobsComponentComponent,
+    TjsAdditionComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,9 @@ import { JacobsComponentComponent } from './jacobs-component/jacobs-component.co
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
