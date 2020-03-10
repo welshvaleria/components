@@ -1,6 +1,6 @@
 <mat-card>
     <mat-card-title>
-        Available Pizza Toppings
+        Available Sides
     </mat-card-title>
     <mat-card-content>
         <button
@@ -21,7 +21,7 @@
         <br>
         <br>
         <div
-            *ngFor="let pt of pizzaToppings"
+            *ngFor="let pt of pizzaSides"
         >
             <mat-checkbox
                 [(ngModel)]="pt.checked"
@@ -30,7 +30,7 @@
             </mat-checkbox>
         </div>
         <h4>
-            Sub-Total: {{ total | currency }}
+            Total: {{ total | currency }}
         </h4>
     </mat-card-content>
 </mat-card>
