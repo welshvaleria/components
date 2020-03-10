@@ -11,15 +11,18 @@ import { MatCardModule } from '@angular/material/card'
 import { MatButtonModule } from '@angular/material/button'
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MagicEightBallComponent } from './magic-eight-ball/magic-eight-ball.component'
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
-
+import { JacobsComponentComponent } from './jacobs-component/jacobs-component.component'
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    MagicEightBallComponent
+    MagicEightBallComponent,
+    JacobsComponentComponent,
+    TjsAdditionComponent,
   ],
   imports: [
     BrowserModule,
