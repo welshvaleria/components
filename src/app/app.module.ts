@@ -13,6 +13,8 @@ import { SdmMadlibComponent } from './sdm-madlib/sdm-madlib.component';
 import { MagicEightBallComponent } from './magic-eight-ball/magic-eight-ball.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+//import { TjsAdditionComponent } from './tjs-addition/tjs-addition';
+import { CacieComponent } from './cacie/cacie.component'
 import { AlecDiceRollComponent } from './alec-dice-roll/alec-dice-roll.component'
 import { VwCtofComponent } from './vw-ctof/vw-ctof.component';
 import { JacobsComponentComponent } from './jacobs-component/jacobs-component.component';
@@ -21,6 +23,8 @@ import { JacobsComponentComponent } from './jacobs-component/jacobs-component.co
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+   // TjsAdditionComponent,
+    CacieComponent,
     AlecDiceRollComponent,
     ApPizzaSidesComponent,
     VwCtofComponent,
