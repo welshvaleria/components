@@ -1,0 +1,46 @@
+<mat-card>
+    <mat-card-title>
+        Sam's Madlib Component
+    </mat-card-title>
+    <mat-card-content>
+        <mat-form-field appearance="fill">
+            <mat-label>Person</mat-label>
+            <input 
+                type="text"
+                [(ngModel)]="person"
+                matInput
+            />
+        </mat-form-field>
+        &nbsp;
+        &nbsp;
+        <mat-form-field appearance="fill">
+            <mat-label>Verb (ing)</mat-label>
+            <input 
+                type="text"
+                [(ngModel)]="verb"
+                matInput
+            />
+        </mat-form-field>
+        &nbsp;
+        &nbsp;
+        <mat-form-field appearance="fill">
+            <mat-label>Unit of time</mat-label>
+            <input 
+                type="text"
+                [(ngModel)]="timeUnits"
+                matInput
+            />
+        </mat-form-field>
+        &nbsp;
+        &nbsp;
+        <button
+            mat-fab
+            color="accent"
+            (click)="generateMadlib()"
+        >
+            Create
+        </button>
+        &nbsp;
+        {{ madlib }}
+    </mat-card-content>
+</mat-card>
