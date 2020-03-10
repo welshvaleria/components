@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>
+        Click go for random number
+    </mat-card-title>
+    <mat-card-content>
+        <button
+            mat-raised-button 
+            color="accent"
+            (click)="newNumber()"
+        >
+           GO!
+        </button>
+        <br />
+        <h3>
+            Your random number: {{ randNumber }}
+        </h3>
+    </mat-card-content>
+</mat-card>
