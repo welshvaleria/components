@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title>
+        Can you hit the kobold? You must roll a 12 or better!
+    </mat-card-title>
+    <mat-card-content>
+        <button
+            mat-fab
+            color="primary"
+            (click)="doesHit(rollDie())"
+        >
+            Roll!
+        </button>
+        <br>
+        <br>
+        <h2>
+            {{ answer }}
+        </h2>
+    </mat-card-content>
+</mat-card>

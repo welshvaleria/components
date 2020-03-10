@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TjsAdditionComponent } from './tjs-addition.component';
+import { AlecDiceRollComponent } from './alec-dice-roll.component';
 
-describe('TjsAdditionComponent', () => {
-  let component: TjsAdditionComponent;
-  let fixture: ComponentFixture<TjsAdditionComponent>;
+describe('AlecDiceRollComponent', () => {
+  let component: AlecDiceRollComponent;
+  let fixture: ComponentFixture<AlecDiceRollComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TjsAdditionComponent ]
+      declarations: [ AlecDiceRollComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TjsAdditionComponent);
+    fixture = TestBed.createComponent(AlecDiceRollComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

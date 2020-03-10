@@ -13,22 +13,21 @@ import { SdmMadlibComponent } from './sdm-madlib/sdm-madlib.component';
 import { MagicEightBallComponent } from './magic-eight-ball/magic-eight-ball.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { AlecDiceRollComponent } from './alec-dice-roll/alec-dice-roll.component'
 import { VwCtofComponent } from './vw-ctof/vw-ctof.component';
 import { JacobsComponentComponent } from './jacobs-component/jacobs-component.component';
-import { TjsAdditionComponent } from './tjs-addition/tjs-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    AlecDiceRollComponent,
     ApPizzaSidesComponent,
-    TjsAdditionComponent,
     VwCtofComponent,
     SdmMadlibComponent,
     WeeksixComponent,
     MagicEightBallComponent,
-    JacobsComponentComponent,
-    TjsAdditionComponent,
+    JacobsComponentComponent
   ],
   imports: [
     BrowserModule,
