@@ -1,8 +1,18 @@
-<div id="squareNumber">
-  <h3>Mitch's Square Number Component</h3>
-  <input type="number" [(ngModel)]='numberOne'>
-  ^2
-  <button click='squareNumber()'>=</button>
-  {{ answer }}
-
-</div>
+<mat-card>
+    <mat-card-title>
+        Mitch's Square Number Component
+    </mat-card-title>
+    <mat-card-content>
+      <input type="number" [(ngModel)]='numberOne'>
+      &nbsp;^2&nbsp;
+      <button
+      mat-mini-fab
+      color="accent"
+      (click)="squareNumber()"
+      >
+      =
+      </button>
+      &nbsp;
+      {{ answer }}
+    </mat-card-content>
+</mat-card>

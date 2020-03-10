@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MakSubtractComponent implements OnInit {
 
   numberOne = 5;
-  answer = 0;
+  answer = 25;
 
   squareNumber = () => {
     this.answer = this.numberOne * this.numberOne;
