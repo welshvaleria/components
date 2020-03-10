@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TjsAdditionComponent } from './tjs-addition.component';
+import { SdmMadlibComponent } from './sdm-madlib.component';
 
-describe('TjsAdditionComponent', () => {
-  let component: TjsAdditionComponent;
-  let fixture: ComponentFixture<TjsAdditionComponent>;
+describe('SdmMadlibComponent', () => {
+  let component: SdmMadlibComponent;
+  let fixture: ComponentFixture<SdmMadlibComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TjsAdditionComponent ]
+      declarations: [ SdmMadlibComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TjsAdditionComponent);
+    fixture = TestBed.createComponent(SdmMadlibComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
