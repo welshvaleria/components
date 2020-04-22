@@ -41,4 +41,8 @@ export class EtaGeneratorComponent implements OnInit {
     this.date = monthOption.monthName + " " + day;
   }
 
+  getRealAnswer() {
+    this.date = "NEVER.";
+  }
+
 }
