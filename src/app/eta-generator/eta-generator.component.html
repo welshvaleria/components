@@ -1,1 +1,17 @@
-<p>eta-generator works!</p>
+<mat-card>
+    <mat-card-title>
+        When will Tyler finish his assignments?
+    </mat-card-title>
+    <mat-card-content>
+        <button
+            mat-raised-button
+            color="primary"
+            (click)="generateDate()"
+        >
+            Generate
+        </button>
+        <p>
+            {{date}}
+        </p>
+    </mat-card-content>
+</mat-card>
