@@ -3,14 +3,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
 import { TtmAdditionComponent } from './ttm-addition/ttm-addition.component';
-import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+// import { FormsModule } from '@angular/forms';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
-import { MatCardModule } from '@angular/material/card'
-import { MatButtonModule } from '@angular/material/button'
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field'
+// import { MatCardModule } from '@angular/material/card'
+// import { MatButtonModule } from '@angular/material/button'
+// import { MatCheckboxModule } from '@angular/material/checkbox';
+// import { MatInputModule } from '@angular/material/input';
+// import { MatFormFieldModule } from '@angular/material/form-field'
 import { WeeksixComponent } from './weeksix/weeksix.component';
 import { FormsModule } from '@angular/forms';
 import { MakSubtractComponent } from './mak-subtract/mak-subtract.component'
